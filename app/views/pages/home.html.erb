@@ -1,0 +1,5 @@
+<div class="mx-auto my-20 flex items-center justify-center">
+  <%= turbo_frame_tag "slow_characters", src: characters_path, class: "w-full" do %>
+    <%= render 'characters/loading' %>
+  <% end %>
+</div>
